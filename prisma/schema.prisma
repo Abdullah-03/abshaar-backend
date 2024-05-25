@@ -12,3 +12,14 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model WaterIntakeEntry {
+  id     Int      @id @default(autoincrement())
+  amount Int // Amount of water in milliliters
+  date   DateTime // Date and time of the entry
+}
+
+model DailyGoal {
+  id   Int @id @default(autoincrement())
+  goal Int // Daily water intake goal in milliliters
+}
