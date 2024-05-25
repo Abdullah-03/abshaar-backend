@@ -1,14 +1,14 @@
 import { Router } from 'express'
 
-const router = Router()
+const intakeRouter = Router()
 
 // Middleware to prepend "/intake" to all routes in this router
-router.use('/intake', (req, res, next) => {
+intakeRouter.use('/intake', (req, res, next) => {
   next()
 })
 
-router.get('/', getIntake)
-router.post('/', addIntake)
-router.get('/history', getIntakeHistory)
+intakeRouter.get('/', getIntake)
+intakeRouter.post('/', addIntake)
+intakeRouter.get('/history', getIntakeHistory)
 
-export default router
+export default intakeRouter
