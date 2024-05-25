@@ -3,6 +3,8 @@ import intakeRouter from './routes/intake'
 
 const app = express()
 
+app.use(express.json())
+
 app.use('/intake', intakeRouter)
 
 app.get('/', (req, res) => {
