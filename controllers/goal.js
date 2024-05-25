@@ -1,6 +1,6 @@
 import prisma from '../utils/db'
 
-export async function getGoal() {
+export async function getGoal(req, res) {
   try {
     const goal = await prisma.dailyGoal.findFirst()
     if (!goal) {
@@ -13,7 +13,7 @@ export async function getGoal() {
   }
 }
 
-export async function setGoal() {
+export async function setGoal(req, res) {
   const { goal } = req.body
   // TODO: validation
 

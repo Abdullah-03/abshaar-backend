@@ -7,7 +7,7 @@ const app = express()
 app.use(express.json())
 
 app.use('/intake', intakeRouter)
-app.use('goal', goalRouter)
+app.use('/goal', goalRouter)
 
 app.get('/', (req, res) => {
   console.log('hello from server')
