@@ -16,7 +16,7 @@ datasource db {
 model WaterIntakeEntry {
   id     Int      @id @default(autoincrement())
   amount Int // Amount of water in milliliters
-  date   DateTime // Date and time of the entry
+  date   DateTime @default(now()) // Date and time of the entry
 }
 
 model DailyGoal {
