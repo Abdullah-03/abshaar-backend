@@ -1,6 +1,6 @@
 import express from 'express'
-import intakeRouter from './routes/intake'
-import goalRouter from './routes/goal'
+import intakeRouter from './routes/intake.js'
+import goalRouter from './routes/goal.js'
 
 const app = express()
 

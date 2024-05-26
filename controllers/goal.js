@@ -1,4 +1,4 @@
-import prisma from '../utils/db'
+import prisma from '../utils/db.js'
 
 export async function getGoal(req, res) {
   try {

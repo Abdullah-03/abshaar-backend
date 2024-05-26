@@ -1,5 +1,9 @@
 import { Router } from 'express'
-import { getIntake, addIntake, getIntakeHistory } from '../controllers/intake'
+import {
+  getIntake,
+  addIntake,
+  getIntakeHistory,
+} from '../controllers/intake.js'
 
 const intakeRouter = Router()
 
